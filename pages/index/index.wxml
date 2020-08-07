@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="wifi" wx:for="{{wifiList}}" wx:key="index">
+    <view class="account wifiView">
+      <text class="stitle">账号:</text>
+      <text class="title">{{item.wifiName}}</text>
+    </view>
+    <view class="password wifiView">
+      <text class="stitle">密码:</text>
+      <text class="title">{{item.wifiPwd}}</text>
+      <view class='activeline' wx:if="{{item.showSign == 1}}" bindtap="copyClick" data-password="{{item.wifiPwd}}">复制</view>
+    </view>
+    <view>
+      <button wx:if="{{item.isOpen == 1}}" class="WiFibtn connectWifi">已连接此WIFI</button>
+      <button wx:else bindtap="oneKeyConnectWifi" class="WiFibtn noConnectWifi" data-item="{{item}}">一键连接WIFI</button>
+    </view>
+  </view>
+</view>

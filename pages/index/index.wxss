@@ -1,0 +1,93 @@
+/* pages/tab_control/wifi/wifiPage.wxss */
+.content{
+  background-color: #242A37;
+  min-height: 180px;
+  padding-bottom: 20rpx;
+  color: white;
+}
+.wifi{
+  width: 92%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 40rpx;
+  background:rgba(36,42,55,1);
+  box-shadow:0px 6px 40px 0px rgba(0,0,0,0.5);
+  border-radius:8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 46rpx 0 50rpx 0;
+}
+
+.stitle{
+  font-size: 28rpx;
+  color: #bbbbbb;
+  margin-right: 20rpx;
+}
+
+.title{
+  font-size: 28rpx;
+  color: white;
+  margin-right: 50rpx;
+  
+}
+.wifiView{
+  min-width: 500rpx;
+  height: 50rpx;
+  margin-left: 148rpx;
+}
+.account{
+  margin-bottom: 20rpx;
+}
+.password{
+  flex-direction: row;
+  display: flex;
+}
+
+.activeline {
+  width: 82rpx;
+  height: 36rpx;
+  border-radius: 8rpx;
+  background: linear-gradient(45deg, rgba(248, 231, 28, 1) 0%, rgba(245, 166, 35, 1) 100%);
+  bottom: 0;
+  color: white;
+  font-size: 24rpx;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.WiFibtn{
+  width:500rpx;
+  height:100rpx;
+  border-radius:50rpx;
+  font-size: 36rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.connectWifi{
+  background:linear-gradient(45deg,rgba(248,231,28,1) 0%,rgba(245,166,35,1) 100%);
+}
+.noConnectWifi{
+  background:rgba(36,42,55,1);
+  border:1px solid rgba(255,255,255,1);
+}
+.jpsToast{
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 24rpx;
+}
